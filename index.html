@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Encriptador de Texto</title>
+</head>
+<body>
+  <main>
+    <section>
+      <textarea class="texto" name="texto" id="texto" placeholder="Escribe el texto aqui"></textarea>
+      <div class="indicaciones">
+        <h4>Solo letras minusculas y sin acentos</h4>
+      </div>
+      <div class="botones">
+        <button class="cifrar" id="cifrar">Cifrar</button>
+        <button class="descifrar" id="descifrar">Descifrar</button>
+      </div>
+    </section>
+    <aside>
+      <section class="ningunMensaje">
+        <div class="imagenMensaje">
+          <img src="" alt="No se encontro mensaje - imagen">
+        </div>
+        <div class="textoMensaje">
+          <h2>No se encontro ningun texto</h2>
+          <p>Ingresa el texto que deseas cifrar o descifrar</p>
+        </div>
+      </section>
+      <section class="mensajeEncontrado">
+        <div class="textoCifrado">
+          <p class="mensajeCifrado"></p>
+        </div>
+        <button class="copiar" id="copiar">Copiar</button>
+      </section>
+    </aside>
+  </main>
+
+  //modal
+  <div class="modal" id="modal">
+    <div class="m-container">
+      <div class="m-header">
+        <h3 class="m-title">Error</h3>
+      </div>
+      <div class="m-body">
+        <p class="m-p">El texto no puede contener mayusculas y/o caracteres especiales</p>
+      </div>
+      <div class="m-footer">
+        <button class="m-button" id="modalButton">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
